@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <fingerprints protocol="smtp" database_type="service" preference="0.11">
   <!--
   SMTP response lines to the QUIT command are matched against these patterns
@@ -21,7 +21,6 @@
     <param pos="0" name="os.arch" value="x86"/>
     <param pos="0" name="os.cpe23" value="cpe:/o:microsoft:windows:-"/>
   </fingerprint>
-
   <fingerprint pattern="^503[ -]5\.5\.0 Not accepting any command except QUIT$">
     <description>Raptor Firewall</description>
     <example>503 5.5.0 Not accepting any command except QUIT</example>

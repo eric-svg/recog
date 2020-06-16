@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <fingerprints protocol="smtp" database_type="service" preference="0.13">
   <!--
   SMTP response lines to the TURN command are matched against these patterns

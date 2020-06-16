@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <fingerprints protocol="smtp" database_type="service" preference="0.19">
   <!--
   SMTP response lines to the EHLO command are matched against these patterns
@@ -16,7 +16,6 @@
     <param pos="0" name="os.product" value="PIX"/>
     <param pos="0" name="os.cpe23" value="cpe:/o:cisco:pix_firewall_software:-"/>
   </fingerprint>
-
   <!--
    Don't try to infer a fingerprint from XEXCH50, because if we do, it might overwrite
    a very precise MS IIS SMTP service or MS Exchange Server fingerprint found with the

@@ -147,14 +147,14 @@ First, setup a python3 venv:
 
   ```bash
   python3 -m venv venv
-  source venv/bin/activate
+  source venv/{bin,Scripts}/activate
   pip install -r requirements.txt
   ```
 
 Download the latest CPE 2.3 dictionary:
 
 ```bash
-wget https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz
+curl -o official-cpe-dictionary_v2.3.xml.gz https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz
 gunzip official-cpe-dictionary_v2.3.xml.gz
 ```
 
