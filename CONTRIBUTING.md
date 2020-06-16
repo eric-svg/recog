@@ -137,6 +137,24 @@ MATCH: {"matched"=>"OpenSSH running on Ubuntu 14.04", "service.version"=>"6.6p1"
 
 [^back to top](#contributing-to-recog)
 
+
+### Standardizing Vendors, Products, and Services
+
+Given the number of fingerprints in Recog, it can be common for specific products, vendors, or services to be identified with different spellings and casing.
+To limit the creep of slightly-different-names, the `bin/recog_standardize` script can be used to extract all identifiers and merge them into the known lists.
+
+To get started, run the `recog_standardize` tool:
+```shell
+ruby bin/recog_standardize
+```
+
+Review any new additions to the text files under `identifiers/`. If any of these names are close to an existing name, update the offending fingerprint to use
+the existing name instead. Once the fingerprints are fixed, removed the "extra" names from the identifiers files, and run the tool again.
+
+
+[^back to top](#contributing-to-recog)
+
+
 ### Updating CPEs
 
 There exists some automation to update the CPEs that might be asserted with
